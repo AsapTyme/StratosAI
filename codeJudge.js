@@ -355,8 +355,7 @@ print(f"The result is: {result}")`,
                 alternativesList.appendChild(alternativeElement);
             });
             
-            // Set share URL
-            shareUrl.value = `${window.location.origin}${window.location.pathname}?score=${overallScoreValue}&name=${encodeURIComponent(name)}`;
+            
             
             // Hide loading state and show results
             analyzeButton.classList.remove('loading');
