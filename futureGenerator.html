@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Future Generator | Stratos AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="futureGenerator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Notification Banner -->
+    <div class="notification-banner">
+        <div class="notification-content">
+            <span class="blink">BREAKING NEWS:</span> Our AI has predicted its own obsolescence by next Tuesday! 🚀 Series Z funding just closed at $42 billion! 🤑
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">Stratos<span class="logo-highlight">AI</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="mouseMover.html">AI Mouse Mover</a>
+                <a href="futureGenerator.html" class="active">Future Generator</a>
+                <a href="codeJudge.html">Code Judge</a>
+                <a href="#" class="nav-button">Get Early Access</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="product-badge">Beta Access</span>
+                <h1>AI That Generates Your <span class="gradient-text">Future</span></h1>
+                <p class="hero-subtitle">Our quantum-powered neural network predicts your future tech career with unprecedented levels of absurdity. Simply enter your name and watch as we reveal your destiny!</p>
+                <div class="hero-cta">
+                    <a href="#predictor" class="cta-button primary">Generate My Future</a>
+                    <a href="#how-it-works" class="cta-button secondary">How It Works</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="crystal-ball">
+                    <div class="ball">
+                        <div class="crystal-content">
+                            <div class="crystal-swirl"></div>
+                        </div>
+                    </div>
+                    <div class="ball-stand"></div>
+                    <div class="glow-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Technology</span>
+                <h2>Our AI Sees All, Knows All, Guesses Most</h2>
+                <p>Using a proprietary algorithm that combines astrology, random number generation, and a magic 8-ball, we can predict your future tech career with up to 0.001% accuracy!</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Input Analysis</h3>
+                        <p>Our advanced AI analyzes your name using cutting-edge algorithms that definitely aren't just random number generators.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Quantum Computation</h3>
+                        <p>Your data is processed through our quantum-powered neural network that exists in multiple career states simultaneously.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Future Visualization</h3>
+                        <p>Our proprietary career-mapping algorithm combines real tech trends with completely made-up job titles that sound plausible.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Reality Distortion</h3>
+                        <p>Finally, we apply our patented reality distortion field to create career paths that are both technically impossible and wildly lucrative.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Predictor Section -->
+    <section class="predictor" id="predictor">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Predictor</span>
+                <h2>Discover Your Future Tech Career</h2>
+                <p>Enter your name below to unlock your destiny in the ever-evolving tech landscape of tomorrow.</p>
+            </div>
+            <div class="predictor-container">
+                <div class="input-container">
+                    <div class="input-field">
+                        <label for="name-input">Your Full Name</label>
+                        <input type="text" id="name-input" placeholder="Type your name here..." required>
+                    </div>
+                    <div class="input-field">
+                        <label for="email-input">Email Address (for career updates that will never come)</label>
+                        <input type="email" id="email-input" placeholder="your@email.com">
+                    </div>
+                    <button id="predict-button" class="predict-button">
+                        <span class="default-text"><i class="fas fa-crystal-ball"></i> Predict My Future</span>
+                        <span class="loading-text"><i class="fas fa-spinner fa-spin"></i> Consulting the Digital Oracle...</span>
+                    </button>
+                </div>
+                
+                <div class="result-container" id="result-container">
+                    <div class="result-header">
+                        <h3>Based on our advanced AI analysis, your future career is:</h3>
+                    </div>
+                    <div class="career-title" id="career-title">Quantum Meme Generator Specialist</div>
+                    <div class="career-description" id="career-description">
+                        <p>You will revolutionize the meme industry by applying quantum computing principles to generate memes that exist in multiple states of humor simultaneously. Your memes will only be funny when not observed directly.</p>
+                    </div>
+                    <div class="career-stats">
+                        <div class="stat">
+                            <div class="stat-value" id="salary">$420,069</div>
+                            <div class="stat-label">Annual Salary</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value" id="job-satisfaction">∞%</div>
+                            <div class="stat-label">Job Satisfaction</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value" id="burnout-chance">0.01%</div>
+                            <div class="stat-label">Burnout Chance</div>
+                        </div>
+                    </div>
+                    <div class="career-skills">
+                        <h4>Required Skills:</h4>
+                        <div class="skill-tags" id="skill-tags">
+                            <span class="skill-tag">Quantum Physics</span>
+                            <span class="skill-tag">Meme Culture</span>
+                            <span class="skill-tag">Photoshop</span>
+                            <span class="skill-tag">Time Manipulation</span>
+                        </div>
+                    </div>
+                    <div class="career-timeline">
+                        <h4>Your Career Timeline:</h4>
+                        <div class="timeline" id="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2026</div>
+                                <div class="timeline-content">
+                                    <h5>Entry-level Meme Analyst</h5>
+                                    <p>First job at MemeQuantum Inc.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2028</div>
+                                <div class="timeline-content">
+                                    <h5>Senior Meme Strategist</h5>
+                                    <p>Promoted after viral quantum cat meme.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2030</div>
+                                <div class="timeline-content">
+                                    <h5>Chief Meme Officer</h5>
+                                    <p>Leading a team of 50 quantum memers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-actions">
+                        <button id="predict-again-button" class="cta-button secondary">Predict Again</button>
+                        <button id="share-button" class="cta-button primary">Share My Future</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">Testimonials</span>
+                <h2>Success Stories</h2>
+                <p>Hear from individuals whose careers were completely transformed by our AI predictions.</p>
+            </div>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <h3 class="story-career">Blockchain Potato Farmer</h3>
+                        <p class="story-text">"I was predicted to become a 'Blockchain Potato Farmer' and now I'm making millions tokenizing root vegetables. Who knew digital potatoes would be so valuable?"</p>
+                        <div class="story-author">
+                            <div class="author-name">Alex Thompson</div>
+                            <div class="author-meta">Salary: 50 PotatoCoins/day (~$2.3M)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <h3 class="story-career">Quantum Error Correction Therapist</h3>
+                        <p class="story-text">"The AI said I'd be a 'Quantum Error Correction Therapist' helping quantum computers deal with their insecurities. Now I have a waiting list of depressed supercomputers!"</p>
+                        <div class="story-author">
+                            <div class="author-name">Jamie Rodriguez</div>
+                            <div class="author-meta">Salary: $856K + quantum benefits</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <h3 class="story-career">Neural Network Whisperer</h3>
+                        <p class="story-text">"Becoming a 'Neural Network Whisperer' seemed absurd until tech giants started hiring me to sing lullabies to their AI models. Turns out, GPT-7 falls asleep to Bohemian Rhapsody!"</p>
+                        <div class="story-author">
+                            <div class="author-name">Taylor Williams</div>
+                            <div class="author-meta">Salary: $750K + voice insurance</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Questions</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our AI Future Generator.</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How accurate are these career predictions?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our predictions have an accuracy rate of 0.001%, which is approximately the same as guessing randomly. However, we use very expensive hardware to do this guessing, which makes it seem more legitimate.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What if I don't like my predicted career?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Simply try again! Our AI generates completely different results each time, not because it's learning but because it's essentially a random career generator with fancy graphics. Keep clicking until you see something you like!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does your AI know what careers will exist in the future?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>It doesn't! We combine current tech buzzwords with nonsensical job titles to create futuristic-sounding careers. We also threw in a Magic 8-Ball for good measure. The salary predictions are calculated by multiplying random numbers by current tech salaries.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is this an April Fools joke?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, congratulations on figuring it out! This entire website is an April Fools joke. None of these AI products actually exist, and we definitely can't predict your future career. But we hope we made you laugh!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span class="logo-text">Stratos<span class="logo-highlight">AI</span></span>
+                    <p>Taking technology and artificial intelligence to new heights</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Products</h3>
+                        <ul>
+                            <li><a href="mouse-mover.html">AI Mouse Mover</a></li>
+                            <li><a href="future-generator.html">Future Generator</a></li>
+                            <li><a href="code-judge.html">Code Judge</a></li>
+                            <li><a href="#">Coming Soon™</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>© 2025 Stratos AI. All rights reserved. None of our technology actually works.</p>
+                    <p><small>Our address: 404 Not Found Street, Silicon Valley, CA</small></p>
+                    <p><small>APRIL FOOLS! This is a joke website. No actual AI products are offered here.</small></p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Share Modal -->
+    <div class="modal" id="share-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Share Your Future Career</h3>
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-content">
+                <p>Share your ridiculous future career with friends and colleagues:</p>
+                <div class="share-buttons">
+                    <a href="#" class="share-button twitter">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                    <a href="#" class="share-button facebook">
+                        <i class="fab fa-facebook"></i> Facebook
+                    </a>
+                    <a href="#" class="share-button linkedin">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="#" class="share-button email">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </div>
+                <div class="share-link">
+                    <input type="text" id="share-url" readonly>
+                    <button id="copy-link"><i class="fas fa-copy"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="future-generator.js"></script>
+</body>
+</html>

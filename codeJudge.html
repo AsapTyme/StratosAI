@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Judge | Stratos AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="codeJudge.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+</head>
+<body>
+    <!-- Notification Banner -->
+    <div class="notification-banner">
+        <div class="notification-content">
+            <span class="blink">BREAKING NEWS:</span> Our AI has predicted it will replace you by June! 🚀 Neural Network research is up 87%! 
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">Stratos<span class="logo-highlight">AI</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="mouseMover.html">AI Mouse Mover</a>
+                <a href="futureGenerator.html">Future Generator</a>
+                <a href="codeJudge.html" class="active">Code Judge</a>
+                <a href="#" class="nav-button">Get Early Access</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="product-badge">Experimental</span>
+                <h1>AI That <span class="gradient-text">Judges</span> Your Code</h1>
+                <p class="hero-subtitle">Our brutally honest AI code reviewer will destroy your confidence and suggest career alternatives. Perfect for fostering impostor syndrome!</p>
+                <div class="hero-cta">
+                    <a href="#code-analyzer" class="cta-button primary">Judge My Code</a>
+                    <a href="#how-it-works" class="cta-button secondary">How It Works</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-display">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="code-title">judgement.js</div>
+                    </div>
+                    <div class="code-content">
+<pre><code class="language-javascript">/**
+ * Code Judgement Algorithm
+ * Severity levels: 'mild', 'moderate', 'savage', 'career-ending'
+ */
+function judgeCode(code, developerName) {
+  const quality = analyzeCodeQuality(code);
+  const severity = determineSeverity(quality);
+  const insults = generateInsults(severity);
+  const alternatives = suggestCareerAlternatives();
+  
+  return {
+    verdict: `Dear ${developerName}, ${insults.opening}`,
+    analysis: insults.specific,
+    rating: quality.score,
+    alternativeCareer: alternatives[0]
+  };
+}
+
+// This code is judging your code right now...
+// It's not impressed.
+</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Process</span>
+                <h2>How Our AI Code Judge Works</h2>
+                <p>Our revolutionary algorithm combines syntax analysis with unnecessary brutality to thoroughly judge your code.</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Code Analysis</h3>
+                        <p>Our AI parses your code using advanced natural language processing to identify patterns and potential issues. And by "advanced," we mean it just checks if your code contains the words "blockchain" or "AI."</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Performance Prediction</h3>
+                        <p>The AI predicts how your code would perform in production using a sophisticated algorithm based on random number generation and personal bias against certain programming languages.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Feedback Generation</h3>
+                        <p>Our system compiles feedback that's unnecessarily harsh and demoralizing. Years of research went into making sure every comment strikes directly at your deepest insecurities as a developer.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Career Alternatives</h3>
+                        <p>Finally, the AI suggests alternative career paths based on your code quality. These suggestions range from "tech-adjacent roles" to "anything that doesn't involve computers" to "hermit in the mountains."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Analyzer Section -->
+    <section class="code-analyzer" id="code-analyzer">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Judge</span>
+                <h2>Let Our AI Judge Your Code</h2>
+                <p>Paste your code below and prepare for brutal, unnecessary criticism. Consider having a therapist on standby.</p>
+            </div>
+            <div class="analyzer-container">
+                <div class="input-container">
+                    <div class="language-selector">
+                        <label for="language-select">Language</label>
+                        <select id="language-select">
+                            <option value="javascript">JavaScript</option>
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="csharp">C#</option>
+                            <option value="php">PHP</option>
+                            <option value="ruby">Ruby</option>
+                            <option value="go">Go</option>
+                            <option value="swift">Swift</option>
+                            <option value="rust">Rust</option>
+                            <option value="typescript">TypeScript</option>
+                        </select>
+                    </div>
+                    <div class="code-editor">
+                        <div class="editor-header">
+                            <div class="header-tabs">
+                                <div class="tab active">my_terrible_code.js</div>
+                                <div class="tab">add_new_file.js</div>
+                            </div>
+                        </div>
+                        <textarea id="code-input" placeholder="// Paste your soon-to-be-judged code here..."></textarea>
+                    </div>
+                    <div class="developer-info">
+                        <div class="input-field">
+                            <label for="developer-name">Your Name (for personalized mockery)</label>
+                            <input type="text" id="developer-name" placeholder="John Doe">
+                        </div>
+                        <div class="input-field">
+                            <label for="experience-level">Your Experience Level</label>
+                            <select id="experience-level">
+                                <option value="beginner">Beginner (Be Gentle)</option>
+                                <option value="intermediate">Intermediate (Standard Mockery)</option>
+                                <option value="expert">Expert (Full Brutality)</option>
+                                <option value="senior">Senior Developer (Career-Ending)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="analyze-button" class="analyze-button">
+                        <span class="default-text"><i class="fas fa-gavel"></i> Judge My Code</span>
+                        <span class="loading-text"><i class="fas fa-spinner fa-spin"></i> Finding Flaws...</span>
+                    </button>
+                </div>
+                
+                <div class="result-container" id="result-container">
+                    <div class="result-header">
+                        <h3>The Verdict Is In</h3>
+                        <div class="overall-score">
+                            <div class="score-label">Overall Score</div>
+                            <div class="score-value" id="overall-score">1.2/10</div>
+                            <div class="score-gauge">
+                                <div class="gauge-bar">
+                                    <div class="gauge-fill" id="score-gauge-fill"></div>
+                                </div>
+                                <div class="gauge-labels">
+                                    <span>Abysmal</span>
+                                    <span>Masterpiece</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-body">
+                        <div class="verdict-container">
+                            <div class="verdict-icon">
+                                <i class="fas fa-thumbs-down"></i>
+                            </div>
+                            <div class="verdict-content">
+                                <h4>The Judge's Opinion</h4>
+                                <p id="verdict-text">Oh dear. I've seen better code written by a cat walking across a keyboard. Did you actually try, or was this some kind of experiment to see how many anti-patterns you could fit into a single file?</p>
+                            </div>
+                        </div>
+                        
+                        <div class="metrics-container">
+                            <h4>Code Metrics</h4>
+                            <div class="metrics-grid">
+                                <div class="metric">
+                                    <div class="metric-label">Readability</div>
+                                    <div class="metric-bar">
+                                        <div class="bar-fill" id="readability-bar" style="width: 20%"></div>
+                                    </div>
+                                    <div class="metric-value" id="readability-value">2/10</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Efficiency</div>
+                                    <div class="metric-bar">
+                                        <div class="bar-fill" id="efficiency-bar" style="width: 15%"></div>
+                                    </div>
+                                    <div class="metric-value" id="efficiency-value">1.5/10</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Maintainability</div>
+                                    <div class="metric-bar">
+                                        <div class="bar-fill" id="maintainability-bar" style="width: 10%"></div>
+                                    </div>
+                                    <div class="metric-value" id="maintainability-value">1/10</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Originality</div>
+                                    <div class="metric-bar">
+                                        <div class="bar-fill" id="originality-bar" style="width: 5%"></div>
+                                    </div>
+                                    <div class="metric-value" id="originality-value">0.5/10</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="code-analysis">
+                            <h4>Specific Issues</h4>
+                            <div class="issues-list" id="issues-list">
+                                <div class="issue">
+                                    <div class="issue-icon">
+                                        <i class="fas fa-bomb"></i>
+                                    </div>
+                                    <div class="issue-content">
+                                        <div class="issue-title">Nested Callbacks from Hell</div>
+                                        <p class="issue-description">Your callback nesting is deeper than the existential crisis I'm having while reviewing this code. Have you heard of async/await or Promises?</p>
+                                    </div>
+                                </div>
+                                <div class="issue">
+                                    <div class="issue-icon">
+                                        <i class="fas fa-skull-crossbones"></i>
+                                    </div>
+                                    <div class="issue-content">
+                                        <div class="issue-title">Variable Naming Disaster</div>
+                                        <p class="issue-description">Your variable names 'x', 'xx', and 'xxx' are less descriptive than ancient hieroglyphics. Even the archaeologists of future civilizations won't be able to decipher this code.</p>
+                                    </div>
+                                </div>
+                                <div class="issue">
+                                    <div class="issue-icon">
+                                        <i class="fas fa-radiation"></i>
+                                    </div>
+                                    <div class="issue-content">
+                                        <div class="issue-title">Memory Leak Extravaganza</div>
+                                        <p class="issue-description">This code leaks memory faster than a sieve leaks water. After running for 5 minutes, it would consume more RAM than exists in the known universe.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="career-alternatives">
+                            <h4>Suggested Career Alternatives</h4>
+                            <div class="alternatives-list" id="alternatives-list">
+                                <div class="alternative">
+                                    <div class="alternative-icon">
+                                        <i class="fas fa-broom"></i>
+                                    </div>
+                                    <div class="alternative-content">
+                                        <div class="alternative-title">Professional Crayon Counter</div>
+                                        <p class="alternative-description">Your meticulous attention to creating overly complex solutions for simple problems suggests you'd excel at counting crayons for preschools.</p>
+                                    </div>
+                                </div>
+                                <div class="alternative">
+                                    <div class="alternative-icon">
+                                        <i class="fas fa-ghost"></i>
+                                    </div>
+                                    <div class="alternative-content">
+                                        <div class="alternative-title">Digital Hermit</div>
+                                        <p class="alternative-description">Consider a life of solitude in a remote cabin with no internet or electricity to prevent any more code like this from being created.</p>
+                                    </div>
+                                </div>
+                                <div class="alternative">
+                                    <div class="alternative-icon">
+                                        <i class="fas fa-feather"></i>
+                                    </div>
+                                    <div class="alternative-content">
+                                        <div class="alternative-title">Interpretive Dance Instructor</div>
+                                        <p class="alternative-description">Your seemingly random approach to program flow would translate well to interpretive dance, where logical structure is similarly optional.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-actions">
+                        <button id="analyze-again-button" class="cta-button secondary">Judge Another Snippet</button>
+                        <button id="share-results-button" class="cta-button primary">Share My Shame</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">Testimonials</span>
+                <h2>Developer Therapy Sessions</h2>
+                <p>Hear from traumatized developers who had their code judged by our AI.</p>
+            </div>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The AI Code Judge told me my database schema looked like it was designed by throwing darts at a wall of column names. I cried for three days, then completely redesigned our system. We're 300% more efficient now, but I still have nightmares."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <div class="author-placeholder">JS</div>
+                        </div>
+                        <div class="author-info">
+                            <h4>Jake Smith</h4>
+                            <p>Ex-Database Administrator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"I uploaded my PhD thesis project code just for fun. The AI suggested I 'consider a career in professional bubble wrap popping.' I now work at a packaging company and I've never been happier."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <div class="author-placeholder">MC</div>
+                        </div>
+                        <div class="author-info">
+                            <h4>Maria Chan</h4>
+                            <p>Former CS PhD Candidate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The AI told me my code was 'less efficient than a sloth swimming through molasses.' It hurt, but it also motivated me to learn proper algorithms. Now I work at Google, where my code is merely 'as efficient as a sloth walking through molasses.'"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <div class="author-placeholder">TP</div>
+                        </div>
+                        <div class="author-info">
+                            <h4>Tyrone Parker</h4>
+                            <p>Software Engineer at Google</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Questions</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our AI Code Judge.</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does your AI analyze code?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our advanced AI doesn't actually analyze your code at all. It just runs a random number generator to determine how harshly to criticize you, then selects pre-written insults from a database. The technology is indistinguishable from magic!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my code secure on your platform?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We don't store your code because, frankly, we don't want to. Our servers would crash from the sheer horror of what most people submit. However, we do reserve the right to use exceptionally bad code examples for internal comedy nights.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Will your AI help me improve my coding skills?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Studies show that crushing someone's self-esteem is actually a terrible way to help them improve. However, our unnecessarily harsh feedback might motivate you to prove us wrong, which is a valid (if emotionally damaging) learning strategy.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is this an April Fools joke?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you've caught me. This entire website is an April Fools joke. While code review is a genuinely valuable practice, using AI to brutally mock your code probably isn't the most constructive approach. But I had fun making this, and I hope you got a laugh!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span class="logo-text">Stratos<span class="logo-highlight">AI</span></span>
+                    <p>Taking technology and artificial intelligence to new heights</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Products</h3>
+                        <ul>
+                            <li><a href="mouse-mover.html">AI Mouse Mover</a></li>
+                            <li><a href="future-generator.html">Future Generator</a></li>
+                            <li><a href="code-judge.html">Code Judge</a></li>
+                            <li><a href="#">Coming Soon™</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>© 2025 Stratos AI. All rights reserved. None of our technology actually works.</p>
+                    <p><small>Our address: 404 Not Found Street, Silicon Valley, CA</small></p>
+                    <p><small>April fools! This is a joke website. No actual AI products are offered here.</small></p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="main.js"></script>
+    <script src="codeJudge.js"></script>
+</body>
+</html>

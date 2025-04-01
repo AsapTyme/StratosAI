@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mouse Mover | Stratos AI</title>
+    <link rel="stylesheet" href="mouseMover.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Notification Banner -->
+    <div class="notification-banner">
+        <div class="notification-content">
+            <span class="blink">BREAKING NEWS:</span> Our AI has predicted its own obsolescence by next Tuesday! 🚀 Series Z funding just closed at $42 billion! 🤑
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">Stratos<span class="logo-highlight">AI</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="mouseMover.html" class="active">AI Mouse Mover</a>
+                <a href="futureGenerator.html">Future Generator</a>
+                <a href="codeJudge.html">Code Judge</a>
+                <a href="#" class="nav-button">Get Early Access</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="product-badge">New Release</span>
+                <h1>AI-Powered <span class="gradient-text">Mouse Mover</span></h1>
+                <p class="hero-subtitle">Our revolutionary neural network moves your mouse cursor while you're away, giving the impression you're working 24/7. Get promoted without actually working!</p>
+                <div class="hero-cta">
+                    <a href="#demo" class="cta-button primary">Try Demo</a>
+                    <a href="#pricing" class="cta-button secondary">View Pricing</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="cursor-animation">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                    <div class="glow-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Key Features</span>
+                <h2>How Our AI Mouse Mover Works</h2>
+                <p>Our proprietary algorithm analyzes 450 trillion worker behavior patterns to move your mouse just like a real human would.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Advanced Neural Network</h3>
+                    <p>Our AI model was trained on 10 million hours of mouse movement data from the world's most productive employees.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Career Advancement</h3>
+                    <p>Users report an average of 3.7 promotions within the first month. Why work hard when you can let our AI work for you?</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <h3>Always On</h3>
+                    <p>Our AI works 24/7, 365 days a year. Take a vacation, go to sleep, or start a side hustle while looking productive!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Detection-Proof Technology</h3>
+                    <p>Sophisticated algorithms create naturally random mouse movements that bypass all employee monitoring systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo" id="demo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Live Demo</span>
+                <h2>See It In Action</h2>
+                <p>Click the button below to activate our AI and watch as it moves your mouse cursor with human-like precision!</p>
+            </div>
+            <div class="demo-container">
+                <div class="demo-screen">
+                    <div class="screen-header">
+                        <div class="header-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="header-title">AI Mouse Mover Simulation</div>
+                    </div>
+                    <div class="screen-content" id="demo-area">
+                        <div class="fake-cursor" id="fake-cursor">
+                            <i class="fas fa-mouse-pointer"></i>
+                        </div>
+                        <div class="demo-elements">
+                            <div class="demo-element" data-type="button">Click Me</div>
+                            <div class="demo-element" data-type="field">Input Field</div>
+                            <div class="demo-element" data-type="dropdown">
+                                <span>Dropdown</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="demo-element" data-type="checkbox">
+                                <span class="checkbox"></span>
+                                <span>Checkbox</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen-footer">
+                        <button class="start-button" id="start-demo">
+                            <i class="fas fa-play"></i> Start AI Mouse Movement
+                        </button>
+                    </div>
+                </div>
+                <div class="loading-container" id="loading-container">
+                    <div class="loading-status">
+                        <p class="status-text" id="status-text">Initializing neural networks...</p>
+                        <div class="loading-bar">
+                            <div class="loading-progress" id="loading-progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">Testimonials</span>
+                <h2>Success Stories</h2>
+                <p>Hear from our satisfied users who have transformed their careers using our AI Mouse Mover.</p>
+            </div>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"I was about to be fired for low productivity, but after using AI Mouse Mover, I got promoted to Senior VP! Now I play golf while the AI pretends I'm working."</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <div class="author-placeholder">MJ</div>
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Johnson</h4>
+                            <p>Former Jr Associate, Now Senior VP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"I haven't touched my computer in 3 months and I just got Employee of the Year! Thanks to AI Mouse Mover, I now run my own bakery on the side while collecting two salaries."</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <div class="author-placeholder">JS</div>
+                        </div>
+                        <div class="author-info">
+                            <h4>Jessica Smith</h4>
+                            <p>Employee of the Year & Bakery Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"My boss thinks I work 20 hours a day because the mouse is always moving. I sleep 18 hours daily and still got a 400% raise! Best investment ever!"</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <div class="author-placeholder">RC</div>
+                        </div>
+                        <div class="author-info">
+                            <h4>Robert Chen</h4>
+                            <p>Professional Napper & Top Performer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pricing Plans</span>
+                <h2>Choose Your Mouse Mover Package</h2>
+                <p>Transparent pricing with no hidden fees. Cancel anytime.</p>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic Plan</h3>
+                        <div class="pricing-amount">
+                            <span class="currency">$</span>
+                            <span class="amount">99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Basic mouse movements</li>
+                            <li><i class="fas fa-check"></i> Random clicks</li>
+                            <li><i class="fas fa-check"></i> 8 hours of daily operation</li>
+                            <li><i class="fas fa-check"></i> 50% chance of promotion</li>
+                            <li><i class="fas fa-times"></i> Custom movement patterns</li>
+                            <li><i class="fas fa-times"></i> Advanced activity simulation</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#" class="cta-button secondary">Get Started</a>
+                    </div>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro Plan</h3>
+                        <div class="pricing-amount">
+                            <span class="currency">$</span>
+                            <span class="amount">299</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Advanced human-like movements</li>
+                            <li><i class="fas fa-check"></i> Strategic clicks and typing</li>
+                            <li><i class="fas fa-check"></i> 24/7 operation</li>
+                            <li><i class="fas fa-check"></i> 95% chance of promotion</li>
+                            <li><i class="fas fa-check"></i> Automatic email responses</li>
+                            <li><i class="fas fa-times"></i> Zoom meeting attendance</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#" class="cta-button primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise Plan</h3>
+                        <div class="pricing-amount">
+                            <span class="currency">$</span>
+                            <span class="amount">999</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Indistinguishable from human work</li>
+                            <li><i class="fas fa-check"></i> Creates actual deliverables*</li>
+                            <li><i class="fas fa-check"></i> Attends Zoom meetings for you</li>
+                            <li><i class="fas fa-check"></i> CEO position guaranteed</li>
+                            <li><i class="fas fa-check"></i> Writes performance reviews</li>
+                            <li><i class="fas fa-check"></i> *Deliverables may not make sense</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#" class="cta-button secondary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Questions</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our AI Mouse Mover.</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is this legal?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Technically, no. But our legal team consists of AI-generated lawyers who assure us there's only a 87.2% chance of prosecution. Use at your own risk!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What if my boss notices I'm never actually working?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our premium "Boss Detection Algorithm" will temporarily shut down the AI and play a pre-recorded video of you looking stressed and busy whenever your boss approaches your desk. Additional subscription required.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can the AI Mouse Mover actually complete my work?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely not. The AI Mouse Mover only creates the illusion of productivity. For actual work completion, we recommend our companion product "Work Delegator Pro" which automatically assigns your tasks to unsuspecting interns.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What kinds of activities can the AI simulate?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our AI can simulate typing, clicking, scrolling, and even occasional frustrated sighs (speaker required). The Enterprise plan includes random coffee breaks and bathroom visits to maintain the illusion of humanity.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is this an April Fools joke?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>What gave it away? Yes, this is an April Fools joke. None of these products actually exist, and we strongly encourage you to actually do your work instead of looking for ways to avoid it!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Never Work Again?</h2>
+                <p>Join thousands of slackers already revolutionizing their careers with AI Mouse Mover.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="cta-button primary large">Start Free Trial</a>
+                    <a href="#" class="cta-button secondary large">Schedule a Demo</a>
+                </div>
+                <p class="cta-disclaimer">* No actual free trial available. This is an April Fools joke.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span class="logo-text">Stratos<span class="logo-highlight">AI</span></span>
+                    <p>Taking technology and artificial intelligence to new heights</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Products</h3>
+                        <ul>
+                            <li><a href="mouse-mover.html">AI Mouse Mover</a></li>
+                            <li><a href="future-generator.html">Future Generator</a></li>
+                            <li><a href="code-judge.html">Code Judge</a></li>
+                            <li><a href="#">Coming Soon™</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>© 2025 Stratos AI. All rights reserved. None of our technology actually works.</p>
+                    <p><small>Our address: 404 Not Found Street, Silicon Valley, CA</small></p>
+                    <p><small>APRIL FOOLS! This is a joke website. No actual AI products are offered here.</small></p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="mouseMover.js"></script>
+</body>
+</html>
